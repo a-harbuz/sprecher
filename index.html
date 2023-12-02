@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button After Each Sentence</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <nav class="nav1">
+        <h3>Вставьте текст для озвучки (DE):</h3>
+        <div class="divnav2">
+            <button onclick="speak(window.getSelection())">Озвучить выделенное</button>
+            <button onclick="speakWithPause(window.getSelection())">Озвучить всё с паузами</button>
+            <button onclick="countWords()">Подсчёт слов</button>
+            <a href="https://translate.google.com/" target="_blank">Translate.Google</a>
+            <a href="https://learngerman.dw.com/de/nicos-weg/c-36519709" target="_blank">N.Weg-A2</a>    
+            <a href="https://downsub.com/" target="_blank">Субтитры из видео</a>
+            <!-- https://lifehacker.ru/subtitry-youtube/ -->
+        </div>
+    </nav>
+
+    <!-- <div id="text-container">
+        <p class="sentence">Это первое предложение. </p>
+        <p class="sentence">Второе предложение следует за ним. </p>
+        <p class="sentence">И так далее... </p>
+    </div> -->
+
+    <div class="div1">
+
+        <div class="div2">
+            <textarea class="textarea1" name="w3review" rows="10" cols="60"></textarea>
+            <button onclick="split2()">Split... \n</button>
+            <button onclick="split3()">Split... .</button>
+            <button onclick="clearP()">Clear...</button>
+            <!-- <p class="sentence1" ondblclick="highlightText('.sentence1')">Zuerst hörst du dir das Übungsdiktat einmal "gelesen" an. Danach schreibst du "diktiert" ab.</p>
+            <p class="sentence2" ondblclick="highlightText('.sentence2')">Die vielen Sprechpausen sind dafür da, dass du die Audio-Datei pausierst, um mitzukommen.</p>
+            <p class="sentence3" ondblclick="highlightText('.sentence3')">Sollte dir das trotzdem zu schnell sein, gibt es unter dem Audio-Player einen Slider, mit dem du die Wiedergabegeschwindigkeit anpassen kannst.</p>
+            <p class="sentence4" ondblclick="highlightText('.sentence4')">Wenn du mit dem Diktat fertig bist, solltest du es dir noch einmal "gelesen" anhören, um zu überprüfen, ob du auch nichts vergessen hast.</p>
+             -->
+        </div>
+
+        <div class="div3">
+            <textarea class="textarea2" name="w3review" rows="10" cols="60"></textarea>
+            <button onclick="">...</button>
+            <button onclick="">...</button>
+        </div>
+        
+        <br>
+
+    </div>
+
+    <!-- <button onclick="speak(window.getSelection())">Озвучить выделенное</button> -->
+
+
+    <script src="script/script.js"></script>
+    <script src="script/script2.js"></script>
+</body>
+</html>
