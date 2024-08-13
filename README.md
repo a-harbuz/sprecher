@@ -1,2 +1,2 @@
 # sprechen
-sprechen
+Hörtraining Programm.
